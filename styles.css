@@ -1,67 +1,264 @@
-/* Reset naršyklės stilius */
-* {
+/* Komentarai užtruka ilgiau nei kodas. Bet noriu kad skaitytum :D */
+body {
+  font-family: "Domine", sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  background-color: rgb(255, 232, 186);
+  font-size: 16px; 
 }
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-}
-
+/* Centrinis šiukšlių konteineris :))) */
 .container {
-  width: 90%;
+  max-width: 66vw; 
   margin: 0 auto;
+  padding: 0; 
 }
 
+/* Meniu sekcija (Menu Section) */
 header {
-  background-color: #000;
-  color: #fff;
-  padding: 20px 0;
-}
-
-header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0; 
+  background-color: rgb(255, 232, 186);
+  border-bottom: 0.0625rem solid #000000; 
+  height: 8vh; 
+  box-sizing: border-box; 
+  margin: 0;
 }
 
-nav ul {
+.logo {
+  flex-shrink: 0; 
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1rem; 
+  color: #333;
+}
+
+.main-nav {
+  flex-grow: 1;
   display: flex;
+  justify-content: center;
+}
+
+.nav-links {
   list-style: none;
+  display: flex;
+  gap: 4rem; 
+  margin: 0;
+  padding: 0;
 }
 
-nav ul li {
-  margin-left: 20px;
+.nav-links li {
+  margin: 0;
 }
 
-nav ul li a {
-  color: #fff;
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.7rem; 
+  font-weight: 700;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+.cart-icon {
+  flex-shrink: 0; 
+}
+
+.cart-icon a {
+  color: #333;
+  font-size: 0.7rem; 
   text-decoration: none;
 }
 
-.hero {
-  background-image: url("https://via.placeholder.com/1200x600");
-  background-size: cover;
-  background-position: center;
-  color: #fff;
+.cart-icon a:hover {
+  color: #000;
+}
+
+/* Antraštės sekcija (Header Section).*/
+.header-section {
+  display: block;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  padding: 100px 0;
+  margin-top: 2.5vh;
+  padding: 2.5vh 0; 
+  overflow: hidden;
 }
 
-.hero .container {
-  max-width: 600px;
+.header-section img {
+  width: 100%;
+  margin-top: 3vh;
+  height: auto;
+  max-height: 50vh;
+  border-radius: 2rem;
+  object-fit: cover; 
 }
 
-.content {
-  padding: 40px 0;
+.header-text h1 {
+  font-size: 2rem; 
+  color: #333;
+  margin-top: 3vh; 
 }
 
-footer {
-  background-color: #000;
-  color: #fff;
+.header-text p {
+  font-size: 1.2rem; 
+  color: #666;
+  margin-top: 1.25vh; 
+}
+
+.bellow-header {
+  margin-top: 3vh;
+  display: grid; 
+  grid-template-columns: 2fr 1fr; 
+  gap: 20px; 
+  padding-top: 5vh;
+}
+
+.bellow-header h2 {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.bellow-header p {
+  font-size: 0.7rem;
+  margin: 0;
+  text-align: left;
+  text-justify: auto;
+}
+.column a {
+  display: inline-block;
+  font-size: 0.7rem;
+  width: 100%; 
+  margin-top: 1rem;
+  text-align: left;
+  color: #333;
+}
+
+.product-showcase {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0; 
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; 
+  width: 80%; 
+}
+
+.product-image {
+  display: flex;
+  flex: 1;
   text-align: center;
-  padding: 20px 0;
+  height:70vh;
+  overflow: hidden;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: 55vh; 
+  width: 45vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.small-image-wrapper {
+  width: 12vw; 
+  height: 20vw; 
+  margin: 0 auto;
+  padding-left: 2vw; 
+  padding-right: 2vw; 
+  box-sizing: border-box; 
+  position: relative;
+  overflow: hidden;
+  bottom: 8vh;
+}
+
+.small-image {
+  position: relative;
+  height: 50%;
+}
+
+.small-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  position: relative;
+  
+}
+
+.product-details {
+  flex: 1;
+  text-align: center;
+  padding-left: 2rem;
+}
+
+.product-details h2 {
+  font-size: 2rem; 
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.product-details p {
+  font-size: 1rem; 
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.7); 
+  color: #fff;
+  text-decoration: none;
+  opacity: 0; 
+  z-index: 10; 
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.small-image:hover .cta-button {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0); 
+}
+
+/* Responsive stuff */
+@media (min-width: 48em) {
+  
+  .header-section {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .header-text h1 {
+    font-size: 2.5rem; 
+  }
+
+  .header-text p {
+    font-size: 1.5rem; 
+  }
+}
+
+@media (min-width: 64em) {
+  
+  .header-text h1 {
+    font-size: 3rem; 
+
+  .header-text p {
+    font-size: 1.7rem; 
+  }
 }

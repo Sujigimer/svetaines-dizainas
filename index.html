@@ -3,42 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Svetainės dizaino kopija</title>
+    <title>Wesley Pets</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- Pridėkime Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Ga+Maamli&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <h1 class="logo">Svetainės logotipas</h1>
-        <nav>
-          <ul>
-            <li><a href="#">Namai</a></li>
-            <li><a href="#">Apie</a></li>
-            <li><a href="#">Paslaugos</a></li>
-            <li><a href="#">Kontaktai</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <!-- Meniu sekcija -->
+    <header class="container">
+    <div class="logo">
+      <h1>Wesley Pets</h1>
+    </div>
+    <nav class="main-nav">
+      <ul class="nav-links">
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="cart-icon">
+      <a href="#"><i class="fas fa-shopping-cart"> 0</i></a>
+    </div>
+  </header>
 
-    <section class="hero">
-      <div class="container">
-        <h2>Pagrindinė antraštė</h2>
-        <p>Pagrindinis tekstas svetainės įžangai.</p>
+    <!-- Antraštės sekcija -->
+    <div class="header-section container">
+      <section>
+      <div class="header-text">
+        <h1>The collar everyone’s been talking about</h1>
+      </div>
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/624b503c76a0381ec2bd03b9/1649102932018-CEVUOBZYRK7RGRKJ695F/Smiling+dog+wearing+the+popular+Pep%C3%A9+collar"
+        alt="Šuo su antkakliu"
+      />
+      <div class="bellow-header">
+      <div class="column">
+        <h2>Welcome to the Wesley pack</h2>
+      </div>
+      <div class="column">
+        <p>It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. </p>
+      <a href="">Learn about us ></a>
+      </div>
+    </div>
+    </div>
+    <section class="product-showcase">
+      <div class="product-container">
+        <div class="product-image">
+          <img src="https://images.squarespace-cdn.com/content/v1/624b503c76a0381ec2bd03b9/1649102932025-SNZB6SDIQA9MWMILRRWO/Dog+wearing+the+popular+Pep%C3%A9+collar?format=2500w" alt="Large Product Image">
+        </div>
+        <div class="product-details">
+          <div class="small-image-wrapper">
+          <div class="small-image">
+            <img src="https://images.squarespace-cdn.com/content/v1/624b503c76a0381ec2bd03b9/1649102909753-RYNJV14OTMXA4V6HR4GI/harness-set.jpg?format=300w" alt="Small Product Image">
+            <a href="#" class="cta-button">Quick view</a> 
+          </div>
+          <h4>Iris collar</h4>
+          <p>$25.00</p>
+          </div>
+        </div>
       </div>
     </section>
-
-    <section class="content">
-      <div class="container">
-        <h3>Antrinė antraštė</h3>
-        <p>Turinio skyrius su aprašymu ir paveikslėliais.</p>
-      </div>
-    </section>
-
-    <footer>
-      <div class="container">
-        <p>© 2024 Vardas Pavardė. Visos teisės saugomos.</p>
-      </div>
-    </footer>
   </body>
 </html>
