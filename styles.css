@@ -499,12 +499,17 @@ header {
   margin-bottom: 3rem;
 }
 
-.footer-left p a {
+.signature {
+  position: absolute;
+  left: 420px;
+}
+
+.signature p a {
   color: #000000;
   font-size: 0.8rem;
 }
 
-.footer-left p {
+.signature p {
   color: #000000;
   font-size: 0.8rem;
 }
@@ -877,13 +882,30 @@ header {
     transform: translateX(-66.66%); /* Veri ameizing programineišin nr.2 */
   }
 
+  /* footer'is */
+
+  .footer-section {
+  }
+
   .footer-instagram h2 {
-    font-size: 1.5rem;
+    font-size: 3rem;
+  }
+
+  .footer-instagram p {
+    margin-bottom: 2rem;
   }
 
   .footer-images img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 160px;
+    border-radius: 2.5rem;
+  }
+
+  .footer-content {
+    margin-bottom: 2rem;
+  }
+
+  .footer-left {
   }
 
   .footer-right form {
