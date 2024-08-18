@@ -5,11 +5,24 @@ body {
   padding: 0;
   background-color: rgb(255, 232, 186);
   font-size: 16px;
+  width: 100%;
+}
+
+header {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+main {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 /* Centrinis šiukšlių konteineris :))) */
 .container {
-  max-width: 68%;
+  max-width: 85%;
   margin: 0 auto;
   padding: 0;
 }
@@ -407,13 +420,13 @@ header {
 }
 
 .footer-section {
-  background-color: #fde2b7; /* Background color similar to the image */
   padding: 2rem;
   text-align: center;
 }
 
 .footer-instagram {
   margin-bottom: 2rem;
+  color: #000000;
 }
 
 .footer-instagram h2 {
@@ -421,37 +434,48 @@ header {
   margin-bottom: 0.5rem;
 }
 
+.footer-instagram h2 a {
+  color: #000000;
+}
+
 .footer-instagram p {
   font-size: 1rem;
-  color: #666;
-  margin-bottom: 1rem;
+  color: #000000;
+  margin-bottom: 5rem;
 }
 
 .footer-images {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .footer-images img {
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  max-width: 420px;
+  height: 340px;
   object-fit: cover;
-  border-radius: 1rem;
+  border-radius: 2rem;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-top: 2rem;
+  margin-bottom: 5rem;
+  gap: 2rem;
+  max-width: 68%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-left,
 .footer-center,
 .footer-right {
-  flex: 1;
+  flex: 1 1 100%;
   padding: 1rem;
   text-align: left;
 }
@@ -461,21 +485,36 @@ header {
 }
 
 .footer-left h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  margin-bottom: 4rem;
 }
 
 .footer-social a {
   margin-right: 1rem;
-  font-size: 1.5rem;
-  color: #333;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.footer-social {
+  margin-bottom: 3rem;
+}
+
+.footer-left p a {
+  color: #000000;
+  font-size: 0.8rem;
+}
+
+.footer-left p {
+  color: #000000;
+  font-size: 0.8rem;
 }
 
 .footer-social a:hover {
-  color: #000;
+  color: #696969;
 }
 
 .footer-center ul {
+  font-size: 0.8rem;
   list-style: none;
   padding: 0;
 }
@@ -485,7 +524,6 @@ header {
 }
 
 .footer-center ul li a {
-  text-decoration: none;
   color: #333;
 }
 
@@ -495,28 +533,35 @@ header {
 
 .footer-right form {
   display: flex;
+  flex-direction: row;
   gap: 0.5rem;
+  align-items: center;
+  font-size: 0.8rem;
 }
 
 .footer-right input[type="email"] {
   padding: 0.5rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   border: 1px solid #ccc;
   border-radius: 0.25rem;
-  flex: 1;
+  width: 80%;
+  height: 30px;
 }
 
 .footer-right button {
   padding: 0.5rem 1rem;
-  background-color: #333;
-  color: #fff;
-  border: none;
+  background-color: rgb(255, 232, 186);
+  color: #000000;
+  border: 1px solid #000000;
   border-radius: 0.25rem;
   cursor: pointer;
+  width: 30%;
+  height: 50px;
 }
 
 .footer-right button:hover {
   background-color: #000;
+  color: #ffffff;
 }
 @media (max-width: 768px) {
   .header-section img {
@@ -566,8 +611,8 @@ header {
 
 @media (max-width: 480px) {
   .container {
-    max-width: 90%;
-    padding: 0;
+    max-width: 100%;
+    padding: 1rem;
     margin-bottom: 0vh;
   }
 
@@ -728,6 +773,99 @@ header {
   }
 
   /* 3-čia sekcija */
+
+  .carousel {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background-color: rgb(230 216 249);
+    padding-top: 10vh;
+  }
+
+  .carousel-slides {
+    display: flex;
+    flex-direction: row;
+    width: calc(100vw * 4); /* čia spėliojam */
+  }
+
+  .carousel-slide {
+    flex: 0 0 33.33%;
+    box-sizing: border-box;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .image-container {
+    width: 80%;
+    height: 70%;
+    overflow: hidden; /* paslepiam gliūkus */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .image-container h3 {
+  }
+
+  .image-container p {
+  }
+
+  .shop-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: rgb(230 216 249);
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid #000000;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .shop-button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .carousel input {
+    display: none;
+  }
+
+  .carousel-controls {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+
+  .carousel-arrow {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    pointer-events: all;
+  }
+
+  #slide1:checked ~ .carousel-slides {
+    transform: translateX(0%); /* Veri ameizing programineišin */
+  }
+
+  #slide2:checked ~ .carousel-slides {
+    transform: translateX(-33.33%); /* Veri ameizing programineišin nr.2 */
+  }
 
   .footer-instagram h2 {
     font-size: 1.5rem;
