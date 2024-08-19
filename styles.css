@@ -22,7 +22,7 @@ main {
 
 /* Centrinis šiukšlių konteineris :))) */
 .container {
-  max-width: 85%;
+  max-width: 68%;
   margin: 0 auto;
   padding: 0;
 }
@@ -501,7 +501,7 @@ header {
 
 .signature {
   position: absolute;
-  left: 420px;
+  left: 420px; /*absurdas, bet veikia */
 }
 
 .signature p a {
@@ -581,19 +581,40 @@ header {
     max-height: 60vh;
   }
 
+  .product-showcase {
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+
+  .small-image-wrapper {
+    max-width: 100%;
+    width: 40vw;
+  }
+
+  .small-image {
+    width: 80%;
+    max-width: 400px;
+    padding-left: 3vw;
+  }
+
+  .cta-button {
+    left: 55%; /* upsi deizi */
+  }
+
+  .small-image a {
+  }
+
   .product-container {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     text-align: center;
+    width: 80vw;
   }
 
   .product-image,
   .product-details {
     width: 100%;
     margin-bottom: 2rem;
-  }
-
-  .small-image-wrapper {
-    height: auto;
   }
 
   .carousel-slides {
@@ -616,7 +637,7 @@ header {
 
 @media (max-width: 480px) {
   .container {
-    max-width: 100%;
+    max-width: 90%;
     padding: 0rem;
     margin-bottom: 0vh;
   }
@@ -885,14 +906,35 @@ header {
   /* footer'is */
 
   .footer-section {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .footer-instagram {
+    margin-bottom: 2rem;
+    color: #000000;
   }
 
   .footer-instagram h2 {
-    font-size: 3rem;
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-instagram h2 a {
+    color: #000000;
   }
 
   .footer-instagram p {
-    margin-bottom: 2rem;
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 3rem;
+  }
+
+  .footer-images {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
   }
 
   .footer-images img {
@@ -902,21 +944,145 @@ header {
   }
 
   .footer-content {
-    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    max-width: 85%;
+    gap: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .footer-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .footer-logo {
+    text-align: left;
+  }
+
+  .footer-logo h3 {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+
+  .footer-social {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+  }
+
+  .footer-social a {
+    font-size: 1.2rem;
+    color: #000000;
+  }
+
+  .footer-social a:hover {
+    color: #696969;
+  }
+
+  .footer-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    flex: 1;
+  }
+
+  .footer-center ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .footer-center ul li a {
+    color: #333;
+  }
+
+  .footer-center ul li a:hover {
+    color: #000;
+  }
+
+  .signature {
+    text-align: right;
+    margin: 0;
+    position: relative;
+    left: 0;
+    flex: 1;
+  }
+
+  .signature p a {
+    color: #000000;
+    font-size: 1.2rem;
+  }
+
+  .signature p {
+    color: #000000;
+    font-size: 1.2rem;
+  }
+
+  .footer-right {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    padding-top: 0;
+  }
+
+  .footer-right p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
   }
 
   .footer-right form {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+    font-size: 0.8rem;
   }
 
   .footer-right input[type="email"] {
-    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    width: 65%;
+    height: 50px;
   }
 
   .footer-right button {
-    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: rgb(255, 232, 186);
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    width: 30%;
+    height: 60px;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .footer-right button:hover {
+    background-color: #000;
+    color: #ffffff;
   }
 }
