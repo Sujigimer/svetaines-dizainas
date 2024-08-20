@@ -568,7 +568,7 @@ header {
   background-color: #000;
   color: #ffffff;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .header-section img {
     max-height: 60vh;
   }
@@ -903,7 +903,7 @@ header {
   }
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .container {
     max-width: 90%;
     padding: 0rem;
