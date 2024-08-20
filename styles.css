@@ -191,6 +191,7 @@ header {
   object-position: center;
 }
 
+/* peržegnojau, bet neresponsive */
 .small-image-wrapper {
   max-width: 12vw;
   height: 40vh;
